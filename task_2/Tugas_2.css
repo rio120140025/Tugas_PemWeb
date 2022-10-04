@@ -1,0 +1,48 @@
+body {
+    background-color: papayawhip;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.container {
+    border-radius: 17px;
+    background-color: darkgrey;
+    padding: 20px;
+}
+
+h1 {
+    text-decoration: overline;
+}
+
+input {
+    padding: 5px;
+    margin: 7px;
+}
+
+input[type=text] {
+    width: 50%;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    background-color: rgb(71, 193, 71);
+}
+
+tr:nth-child(even) {
+    background-color: rgb(225, 202, 172);
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(234, 227, 218);
+}
+
+tr:hover {
+    background-color: darkseagreen;
+}
