@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <div id="kelas">
+        <p>Ini Percobaan Memanipulasi DOM</p>
+    </div>
+
+    <script>
+        var text = document.createTextNode("Membuat Text")
+
+        var p = document.createElement("p")
+        p.appendChild(text)
+
+        var elemen = document.getElementById("kelas")
+        elemen.appendChild(p)
+
+        function pop_up() {
+            document.getElementById("button").innerHTML = "<p>Percobaan Button Sukses</p>"
+        }
+    </script>
+
+    <div id="button">
+        <button onclick="pop_up()">
+            Coba Klik
+        </button>
+    </div>
+
+    <style>
+        body {
+            background-color: rgb(250, 239, 225);
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        button {
+            background-color: rgb(116, 116, 199);
+            color: white;
+        }
+    </style>
+</body>
+</html>
